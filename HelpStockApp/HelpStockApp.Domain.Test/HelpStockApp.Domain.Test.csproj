@@ -21,4 +21,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StockHelpApp.Domain\StockHelpApp.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
