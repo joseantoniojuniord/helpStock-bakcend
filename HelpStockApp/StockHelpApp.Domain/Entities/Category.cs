@@ -19,7 +19,8 @@ namespace StockHelpApp.Domain.Endities
         }
 
         public Category(int id,string name) 
-        { 
+        {
+            DomainExceptionValidation.When(id < 0, "Invalid Id value.");
             Id = id;
             validateDomain(name);
         }
