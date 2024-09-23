@@ -23,7 +23,7 @@ namespace HelpStockApp.Domain.Test
         }
         #endregion
 
-        #region Testes Negativos de Categoria (Criature of Darkness !! Evil of Moria!! You sehll not pass!!)
+    #region Testes Negativos de Categoria (Criature of Darkness !! Evil of Moria!! You shall not pass!!)
         [Fact(DisplayName = "Create Category With Invalid Id")]
         public void CreateCategory_WithInvalidParemetersId_ResultException()
         {
@@ -45,6 +45,7 @@ namespace HelpStockApp.Domain.Test
             action.Should().Throw<DomainExceptionValidation>()
                 .WithMessage("Invalid name, name is required!");
         }
+
         [Fact(DisplayName = "Create Category With Name Missing Parameter")]
         public void CreateCategory_WithNameMissingParameter_ResultException()
         {
