@@ -1,4 +1,15 @@
+<<<<<<< Updated upstream:HelpStockApp/HelpStockApp.Domain/Entities/Product.cs
 ﻿using HelpStockApp.Domain.Validation;
+=======
+﻿using HelpStockApp.Domain.Entities;
+using StockHelpApp.Domain.Endities;
+using StockHelpApp.Domain.Validation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+>>>>>>> Stashed changes:HelpStockApp/StockHelpApp.Domain/Entities/Product.cs
 
 namespace HelpStockApp.Domain.Entities
 {
