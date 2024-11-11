@@ -46,4 +46,4 @@ namespace HelpStockApp.Infra.Data.Repositories
         }
     }
 }
-}
+

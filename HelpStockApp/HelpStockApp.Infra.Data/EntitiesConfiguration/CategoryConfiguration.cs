@@ -1,7 +1,7 @@
 ﻿using HelpStockApp.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using StockHelpApp.Domain.Endities;
+
 
 namespace HelpStockApp.Infra.Data.EntitiesConfiguration
 {

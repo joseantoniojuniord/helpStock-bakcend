@@ -12,8 +12,8 @@ namespace HelpStockApp.Domain.Interfaces
         Task<Category> Update(Category category);
         Task<Category> Remove(Category category);
     }
-<<<<<<< Updated upstream:HelpStockApp/HelpStockApp.Domain/Interfaces/ICategoryRepository.cs
+
 }
-=======
-}
->>>>>>> Stashed changes:HelpStockApp/StockHelpApp.Domain/Interfaces/ICategoryRepository.cs
+
+
+

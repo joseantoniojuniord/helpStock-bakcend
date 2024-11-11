@@ -1,4 +1,4 @@
-namespace HelpStockApp.API
+﻿namespace HelpStockApp.API
 {
     public class WeatherForecast
     {
