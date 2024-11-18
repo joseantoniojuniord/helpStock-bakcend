@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using HelpStockApp.Application.DTOs;
 using HelpStockApp.Application.Interfaces;
 using HelpStockApp.Domain.Entities;

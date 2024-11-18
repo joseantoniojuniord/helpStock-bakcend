@@ -1,8 +1,11 @@
-﻿using HelpStockApp.Domain.Entities;
+using HelpStockApp.Application.Interfaces;
+using HelpStockApp.Application.Mappings;
+using HelpStockApp.Domain.Entities;
 using HelpStockApp.Application.Services;
 using HelpStockApp.Domain.Interfaces;
 using HelpStockApp.Infra.Data.Context;
 using HelpStockApp.Infra.Data.Repositories;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,6 +27,8 @@ namespace HelpStockApp.Infra.IoC
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+
 
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
 
