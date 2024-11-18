@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using HelpStockApp.Application.DTOs;
 using HelpStockApp.Application.Interfaces;
 using HelpStockApp.Domain.Entities;
@@ -15,6 +15,7 @@ namespace HelpStockApp.Application.Services
             _categoryRepository = categoryRepository;
             _mapper = mapper;
         }
+
         public async Task<CategoryDTO> GetCategoriesById(int? id)
         {
             var categoryEntity = await _categoryRepository.GetById(id);
