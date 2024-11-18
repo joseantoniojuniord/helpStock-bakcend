@@ -6,11 +6,15 @@ using HelpStockApp.Domain.Interfaces;
 
 namespace HelpStockApp.Application.Services
 {
-    internal class CategoryService : ICategoryService
+    public class CategoryService : ICategoryService
     {
         private ICategoryRepository _categoryRepository;
         private readonly IMapper _mapper;
-
+        public CategoryService(ICategoryRepository categoryRepository, IMapper mapper)
+        {
+            _categoryRepository = categoryRepository;
+            _mapper = mapper;
+        }
         public async Task<CategoryDTO> GetCategoriesById(int? id)
         {
             var categoryEntity = await _categoryRepository.GetById(id);
