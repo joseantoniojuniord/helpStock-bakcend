@@ -32,7 +32,7 @@ namespace HelpStockApp.API.Controllers
             return Ok(categories);
         }
 
-        [HttpGet("(id:int)", Name ="GetCategory")]
+        [HttpGet("{id:int}", Name ="GetCategory")]
         public async Task<ActionResult<CategoryDTO>> Get(int id)
         {
             var category = await _categoryService.GetCategoriesById(id);
